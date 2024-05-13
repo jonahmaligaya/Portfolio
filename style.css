@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@font-face {
+	font-family: 'adelleregularwebfont';
+	src: local('adelleregularwebfont'), url('assets/adelleregularwebfont.woff') format('woff');
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Concert One', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #fafbfe;
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #515e66;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+.togglebutton {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.togglebutton i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #fbfbfb;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+.main {
+    background-color: #242a38;
+}
+.index {
+    margin-left: 250px;
+    margin-top: 10px;
+}
+#jonahmaligayapicture {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+#indextext1 {
+    margin-top: 20px;
+    font-family: 'adelleregularwebfont';
+    font-weight: bold;
+    font-size: 50px;
+    color: #242a38;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+#indextext2 {
+    margin-top: 0px;
+    font-family: 'adelleregularwebfont';
+    font-weight: bold;
+    font-size: 75px;
+    color: white;
+    display: inline;
+}
+#indextext3 {
+    margin-top: 30px;
+    font-family: 'adelleregularwebfont';
+    font-weight: bold;
+    font-size: 30px;
+    color: #242a38;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+#indextext4 {
+    font-family: 'adelleregularwebfont';
+    font-size: 20px;
+    color: rgb(162, 162, 162);
+}
+.indexbutton {
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 15px;
+    font-family: 'adelleregularwebfont';
+    color: white;
+    background-color: #3d4045;
+    border-color: #3d4045;
+    border-radius: 10px;
+    border-style: solid;
+    font-weight: bolder;
+}
+.about {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+#jonahmaligayaabout {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    display: inline;
+    float: right;
+}
+.abouttitle {
+    margin-left: 0px;
+    margin-top: 0px;
+    font-family: 'adelleregularwebfont';
+    font-size: 50px;
+    color: #242a38;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    display: inline;
+}
+.abouttext {
+    display: inline;
+    margin-left: 680px;
+    font-family: 'adelleregularwebfont';
+    font-size: 20px;
+    color: rgb(162, 162, 162);
+    display: inline;
+}
+.resumeform {
+    display: inline;
+}
+#resumebutton {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'adelleregularwebfont';
+    color: white;
+    background-color: #3d4045;
+    border-color: #3d4045;
+    border-radius: 10px;
+    border-style: solid;
+    font-weight: bolder;
+    padding: 15px 15px;
+    max-width: 150px;
+    width: 150px;
+    display: inline;
+    
+}
+.aboutbuttons {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'adelleregularwebfont';
+    color: white;
+    background-color: #3d4045;
+    border-color: #3d4045;
+    border-radius: 10px;
+    border-style: solid;
+    font-weight: bolder;
+    padding: 15px 15px;
+    max-width: 150px;
+    width: 150px;
+    display: inline;
+}
+.projects {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.projects hr {
+    color: white;
+    border-color: white;
+    text-align: center;
+    height: 2px;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 100%;
+}
+.projects img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 338px;
+}
+.projects video {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 338px;
+}
+.secondimage {
+    float: right;
+}
+.secondvideo {
+    float: right;
+}
+#maintitle {
+    font-size: 60px;
+    font-family: 'adelleregularwebfont';
+    color: #242a38;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+}
+.titles {
+    font-size: 30px;
+    font-family: 'adelleregularwebfont';
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.descriptions {
+    text-align: center;
+    font-family: 'adelleregularwebfont';
+    font-size: 20px;
+    color: rgb(162, 162, 162);
+    margin-right: 10px;
+}
+.skills {
+    text-align: center;
+    font-family: 'adelleregularwebfont';
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.buttondiv{
+    text-align: center;
+}
+.githubbuttons {
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'adelleregularwebfont';
+    color: white;
+    background-color: #3d4045;
+    border-color: #3d4045;
+    border-radius: 10px;
+    border-style: solid;
+    font-weight: bolder;
+    padding: 15px 15px;
+    max-width: 150px;
+    width: 150px;
+    display: inline;
+}
