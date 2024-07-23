@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+.wrapper {
+    display: flex;
+}
+#sidebar {
+    width: 4vw;
+    min-width: 4vw;
+    min-height: 100vh;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #515e66;
+    display: flex;
+    flex-direction: column;
+}
+#sidebar.expand {
+    width: 20vw;
+    min-width: 20vw;
+}
+.sidebar_toggle_section {
+    display: flex;
+}
+.toggle_button {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1.2vw;
+}
+.toggle_button:hover {
+    transition: 250ms linear;
+    filter: brightness(50%);
+}
+.toggle_button i {
+    transition: 250ms linear;
+    font-size: 1.5vw;
+    color: white;
+}
+.sidebar_logo {
+    margin: auto 0;
+}
+.sidebar_logo a {
+    transition: 250ms linear;
+    color: white;
+    font-weight: 600;
+    font-size: 3vw;
+    font-family: 'Concert One', sans-serif;
+    text-decoration: none;
+    padding-left: 2vw;
+}
+.sidebar_logo a:hover {
+    transition: 250ms linear;
+    filter: brightness(50%);
+}
+#sidebar:not(.expand) .sidebar_logo,
+#sidebar:not(.expand) a.sidebar_link span {
+    display: none;
+}
+.sidebar_navigation {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+a.sidebar_link {
+    transition: 250ms linear;
+    padding: 1.2vw;
+    color: white;
+    display: block;
+    font-size: 2vw;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+.sidebar_link i {
+    font-size: 1vw;
+    margin-right: .75rem;
+}
+a.sidebar_link:hover {
+    transition: 250ms linear;
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #fbfbfb;
+}
+.sidebar_item {
+    position: relative;
+}
+.sidebar_item a {
+    font-family: 'Concert One', sans-serif;
+    text-decoration: none;
+}
+#sidebar:not(.expand) .sidebar_item .sidebar_dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+#sidebar:not(.expand) .sidebar_item:hover .has-dropdown+.sidebar_dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+#sidebar.expand .sidebar_link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+#sidebar.expand .sidebar_link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}

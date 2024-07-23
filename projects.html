@@ -5,89 +5,92 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jonah Maligaya</title>
-        <link rel="icon" href="assets/jonahmaligayaicon.jpg">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="assets/jonah_maligaya_icon.png">
         <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet">
+        <link href="projects.css" rel="stylesheet">
+        <link href="sidebar.css" rel="stylesheet">
     </head>
-    
     <body>
     <div class="wrapper">
         <aside id="sidebar">
-            <div class="d-flex">
-                <button class="togglebutton" type="button">
+            <div class="sidebar_toggle_section">
+                <button class="toggle_button" type="button">
                     <i class="lni lni-grid-alt"></i>
                 </button>
-                <div class="sidebar-logo">
-                    <a href="#">Jonah Maligaya</a>
+                <div class="sidebar_logo">
+                    <a href="index.html">Jonah</a>
                 </div>
             </div>
-            <ul class="sidebar-nav">
-                <li class="sidebar-item">
-                    <a href="index.html" class="sidebar-link">
+            <ul class="sidebar_navigation">
+                <li class="sidebar_item">
+                    <a href="index.html" class="sidebar_link">
                         <i class="lni lni-home"></i>
                         <span>HOME</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
-                    <a href="about.html" class="sidebar-link">
+                <li class="sidebar_item">
+                    <a href="about.html" class="sidebar_link">
                         <i class="lni lni-user"></i>
                         <span>ABOUT</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
-                    <a href="projects.html" class="sidebar-link">
+                <li class="sidebar_item">
+                    <a href="projects.html" class="sidebar_link">
                         <i class="lni lni-agenda"></i>
                         <span>PROJECTS</span>
                     </a>
                 </li>
             </ul>
         </aside>
-        <div class="main">
+        <div class="content">
+            <p id="projects_title_1">Projects I've Worked On</p>
             <div class="projects">
-                <p id="maintitle">Projects I've Created</p>
                 <hr><br>
-                <div class="houseofhealth">
-                    <img id="houseofhealth1" src="assets/houseofhealth1.PNG" alt="House of Health">
-                    <img id="houseofhealth2" class="secondimage" src="assets/houseofhealth2.PNG" alt="House of Health">
-                    <p class="titles">House of Health</p>
-                    <p class="descriptions">I created an interface for use by receptionists at health centers. It allows for the user (receptionist) to update patient records, create or cancel patient appointments, create or cancel patient procedures, and create patient's accounts. The interface is designed to allow the user to update an SQL database using the information they enter into each form.</p>
-                    <p class="skills">Skills: HTML, CSS, JavaScript, PHP, SQL</p>
-                    <div class="buttondiv">
-                        <a href="https://github.com/jonahmaligaya/HouseofHealth"><button class="githubbuttons" type="button">GitHub <i class="fa fa-github"></i></i></button></a>
-                    </div>
+                <div id="projects_media_section">
+                    <img id="house_of_health_picture_1" class="projects_media" src="assets/house_of_health_picture_1.png" alt="House of Health">
+                    <img id="house_of_health_picture_2" class="projects_media" src="assets/house_of_health_picture_2.png" alt="House of Health">
                 </div>
-                <hr><br>
-                <div class="ivappraiser">
-                    <img id="ivappraiser1" src="assets/ivappraiser1.PNG" alt="Pokémon GO IV Appraiser 1" width="623px" height="600px">
-                    <img class="secondimage" id="ivappraiser2" src="assets/ivappraiser2.PNG" alt="Pokémon GO IV Appraiser 2" width="623px" height="600px">
-                    <p class="titles">Pokémon GO IV Appraiser</p>
-                    <p class="descriptions">I created a simple IV appraiser that allows the user to see how their Pokémon should be used, solely based off of their IVs.</p>
-                    <p class="skills">Skills: HTML, CSS, JavaScript</p>
-                    <div class="buttondiv">
-                        <a href="https://github.com/jonahmaligaya/IVAppraiser"><button class="githubbuttons" type="button">GitHub <i class="fa fa-github"></i></i></button></a>
-                        <a href="https://jonahmaligaya.github.io/IVAppraiser/ivappraiser.html"><button class="githubbuttons" type="button">Test Site <i class="fa fa-mouse-pointer"></i></i></button></a>
-                    </div>
+                <p class="projects_titles">House of Health</p>
+                <p class="projects_descriptions">
+                    I created an interface for use by receptionists at health centers. It allows for the user (receptionist) to update patient records, create or cancel patient appointments, create or cancel patient procedures, and create patient's accounts. The interface is designed to allow the user to update an SQL database using the information they enter into each form.
+                </p>
+                <p class="projects_skills">Skills: HTML, CSS, JavaScript, PHP, SQL</p>
+                <div id="projects_button_section">
+                    <a href="https://github.com/jonahmaligaya/HouseofHealth" ><button class="projects_buttons" id="house_of_health_github_button">GitHub Repository <i class="fa fa-github"></i></button></a>
                 </div>
+            </div>
+            <div class="projects">
                 <hr><br>
-                <div class="quake4palmod">
-                    <video id="quake4palmod1" width="623px" controls>
-                        <source src="assets/quake4palmod1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <video class="secondvideo" id="quake4palmod2" width="623px" margin-left="40px" controls>
-                        <source src="assets/quake4palmod2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="titles">Quake 4 Modification: The Palmod</p>
-                    <p class="descriptions">I created a modification for the game Quake 4, which allows the user to catch five different "Pals" using your trusty "Palcatcher" and command them each to do unique attacks using your weaponry! This project allowed me to highlight my ability to work with an existing codebase and modify it to allow games to be played in different ways than intended.</p>
-                    <p class="skills">Skills: C++</p>
-                    <div class="buttondiv">
-                        <a href="https://github.com/jonahmaligaya/Quake4-Palmod"><button class="githubbuttons" type="button">GitHub <i class="fa fa-github"></i></i></button></a>
-                    </div>
+                <div id="projects_media_section">
+                    <img id="iv_appraiser_picture_1" class="projects_media" src="assets/iv_appraiser_picture_1.png" alt="Pokémon GO IV Appraiser">
+                    <img id="iv_appraiser_picture_2" class="projects_media" src="assets/iv_appraiser_picture_2.png" alt="Pokémon GO IV Appraiser">
                 </div>
+                <p class="projects_titles">Pokémon GO IV Appraiser</p>
+                <p class="projects_descriptions">
+                    I created a simple IV appraiser that allows the user to see how their Pokémon should be used, solely based off of their IVs.
+                </p>
+                <p class="projects_skills">Skills: HTML, CSS, JavaScript</p>
+                <div id="projects_button_section">
+                    <a href="https://github.com/jonahmaligaya/IVAppraiser" ><button class="projects_buttons" id="iv_appraiser_github_button">GitHub Repository <i class="fa fa-github"></i></button></a>
+                    <a href="https://jonahmaligaya.github.io/IVAppraiser/ivappraiser.html" ><button class="projects_buttons" id="iv_appraiser_test_site_button">Test Site <i class="fa fa-play-circle"></i></button></a>
+                </div>
+            </div>
+            <div class="projects">
                 <hr><br>
+                <div id="projects_media_section">
+                    <video id="quake_4_palmod_video_1" class="projects_media" controls><source src="assets/quake_4_palmod_video_1.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                    <video id="quake_4_palmod_video_2" class="projects_media" controls><source src="assets/quake_4_palmod_video_2.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                </div>
+                <p class="projects_titles">Quake 4: The Palmod</p>
+                <p class="projects_descriptions">
+                    I created a modification for the game Quake 4, which allows the user to catch five different "Pals" using your trusty "Palcatcher" and command them each to do unique attacks using your weaponry! This project allowed me to highlight my ability to work with an existing codebase and modify it to allow games to be played in different ways than intended.
+                </p>
+                <p class="projects_skills">Skills: C++</p>
+                <div id="projects_button_section">
+                    <a href="https://github.com/jonahmaligaya/Quake4-Palmod" ><button class="projects_buttons" id="quake_4_palmod_github_button">GitHub Repository <i class="fa fa-github"></i></button></a>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Adelle Regular';
+	src: local('adelle_regular_webfont'), url('assets/adelle_regular_webfont.woff') format('woff');
+}
+body {
+    background-color: #242a38;
+}
+.content {
+    margin-top: 2%;
+}

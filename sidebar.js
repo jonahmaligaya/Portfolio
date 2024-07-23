@@ -1,5 +1,5 @@
-const togglebutton = document.querySelector(".togglebutton");
+const toggle_button = document.querySelector(".toggle_button");
 
-togglebutton.addEventListener("click", function () {
+toggle_button.addEventListener("click", function () {
   document.querySelector("#sidebar").classList.toggle("expand");
 });
