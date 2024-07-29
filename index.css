@@ -73,3 +73,81 @@ body {
     transition: 250ms linear;
     filter: brightness(50%);
 }
+@media only screen and (max-device-width: 1024px) {
+    body {
+        background-color: #242a38;
+    }
+    .content {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 4%;
+    }
+    .content #index_introduction_section {
+        display: block;
+    }
+    .content #index_introduction_section #index_introduction_text #index_title_1 {
+        margin-top: 4%;
+        font-family: 'Adelle Regular';
+        font-weight: bold;
+        font-size: 8vw;
+        color: #242a38;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
+    .content #index_introduction_section #index_introduction_text #index_title_2 {
+        font-family: 'Adelle Regular';
+        font-weight: bold;
+        font-size: 10vw;
+        color: white;
+        display: inline;
+    }
+    .content #index_introduction_section #index_introduction_image {
+        text-align: center;
+    }
+    .content #index_introduction_section #index_introduction_image #jonah_maligaya_picture {
+        width: 50%;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .content #index_title_3 {
+        font-family: 'Adelle Regular';
+        font-weight: bold;
+        font-size: 7vw;
+        color: #242a38;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        margin-top: 2%;
+    }
+    .content #index_caption_1 {
+        font-family: 'Adelle Regular';
+        font-size: 5vw;
+        color: rgb(162, 162, 162);
+    }
+    .content #index_button_section {
+        margin-top: 2%;
+    }
+    .content #index_button_section .index_buttons {
+        transition: 250ms linear;
+        margin-right: 4%;
+        border-color: white;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 4vw;
+        line-height: 24px;
+        padding: 1%;
+        word-break: break-word;
+        border-top: none;
+        border-bottom: solid;
+        border-left: none;
+        border-right: none;
+        font-family:'Adelle Regular';
+        text-decoration: none;
+        margin-top: 4%;
+    }
+    .content #index_button_section .index_buttons:hover {
+        transition: 250ms linear;
+        filter: brightness(50%);
+    }
+}
